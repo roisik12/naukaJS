@@ -1,0 +1,81 @@
+:root{
+    --g1: rgb(55,55,55);
+    --g2: rgb(100,100,100);
+}
+div{
+    margin: auto;
+    height: 50vh;
+    width: 560px;
+}
+body{
+    background: linear-gradient(
+    to right,
+    var(--g1),
+    var(--g2));
+    height: 500vh;
+    margin: 0;
+    padding: 0;
+}
+.figure{
+    width: 100px;
+    height: 100px;
+    top: 50%;
+}
+.square{
+    background-color: red;
+    padding: 5px;
+}
+.circle{
+    border-radius: 50%;
+    background-color: greenyellow;
+}
+.triangle {
+    pointer-events: none;
+    position: relative;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 48px 96px 48px;
+    border-color: transparent transparent blue transparent;
+  }
+.shadow {
+    opacity: .2;
+    transform: translateY(-100%);
+  }
+.shadowGrid {
+    position: relative;
+    opacity: .2;
+    top:-250px;
+  }
+.grid {
+    width: 600px;
+    height: 250px;
+    transform: translateY(100px);
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
+.small{
+        width: 28px;
+        height: 28px;
+}
+#helloWorld path {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 0;
+  }
+button{
+    position: fixed;
+    width: 200px;
+    height: 100px;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    color: white;
+    background-color: rgb(56, 56, 56);
+    border-radius:1cqi;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: large;
+    border-color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+}
